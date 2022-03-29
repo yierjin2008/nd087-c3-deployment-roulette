@@ -24,8 +24,8 @@ spec:
               protocol: TCP
           livenessProbe:
             httpGet:
-              port: 80
-              path: /nginx_status
+              port: 9000
+              path: /healthz
             initialDelaySeconds: 2
             periodSeconds: 2
       nodeSelector:
